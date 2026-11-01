@@ -20,28 +20,9 @@ This project analyzes paid advertising performance to understand which campaign 
 - What are the overall CTR, CPC, CPM, conversion rate, and cost per approved conversion?
 - Which segments should be reviewed before budget is reallocated?
 
-## 🧰 Tools & Skills
-
-- **MySQL:** aggregation, `CASE`, `GROUP BY`, CTEs, window functions, KPI calculations
-- **Python:** Pandas-based data validation and metric cross-checks
-- **Power BI:** recommended dashboard layer for campaign comparison and conversion-funnel reporting
-- **Data quality:** missing-value, duplicate, and zero-denominator checks
-
-
-## 🔎 Dataset & Data Quality
-
-- **Rows:** 1,143
-- **Columns:** 11
-- **Missing values:** 0
-- **Duplicate rows:** 0
-- **Campaign IDs:** 916, 936, 1178
-- **Gender values:** F, M
-- **Age groups:** 30-34, 35-39, 40-44, 45-49
-
 
 ## 📊 Headline Results
 
-Values below are calculated directly from the supplied CSV. Rates are percentages.
 
 | KPI | Result |
 |---|---:|
