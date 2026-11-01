@@ -1,9 +1,3 @@
--- Marketing Performance & Growth Analytics
--- Expected table: marketing_ads
--- Database: MySQL 8.0+
--- Metric rates are returned as percentages. NULLIF prevents division-by-zero errors.
-
--- 1. Inspect source rows
 SELECT *
 FROM marketing_ads
 LIMIT 20;
