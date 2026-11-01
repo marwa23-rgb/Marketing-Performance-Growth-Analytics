@@ -107,5 +107,4 @@ Values below are calculated directly from the supplied CSV. Rates are percentage
 
 ## 👩‍💻 Author
 
-**Marwa Samy**  
-Data Analytics | Marketing Analytics | SQL | Power BI
+**Marwa Samy** · [GitHub](https://github.com/marwa23-rgb)
