@@ -11,7 +11,6 @@
 
 This project analyzes paid advertising performance to understand which campaign IDs and audience segments deliver approved conversions more efficiently. The workflow uses SQL for aggregation and KPI analysis, with Python used to validate headline metrics from the source CSV.
 
-> **Dataset note:** The supplied file contains anonymized campaign identifiers (`xyz_campaign_id` and `fb_campaign_id`). Campaign IDs are retained as provided; no real campaign names are inferred.
 
 ## 🎯 Business Questions
 
