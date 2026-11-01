@@ -28,20 +28,6 @@ This project analyzes paid advertising performance to understand which campaign 
 - **Power BI:** recommended dashboard layer for campaign comparison and conversion-funnel reporting
 - **Data quality:** missing-value, duplicate, and zero-denominator checks
 
-## 📂 Repository Structure
-
-```text
-marketing-performance-growth-analytics/
-├── data/
-│   └── KAG_conversion_data.csv
-├── sql/
-│   └── marketing_performance_analysis.sql
-├── scripts/
-│   └── validate_metrics.py
-├── DATA_DICTIONARY.md
-├── .gitignore
-└── README.md
-```
 
 ## 🔎 Dataset & Data Quality
 
@@ -53,7 +39,6 @@ marketing-performance-growth-analytics/
 - **Gender values:** F, M
 - **Age groups:** 30-34, 35-39, 40-44, 45-49
 
-The source dataset has no missing values or duplicate rows. The SQL script includes checks for zero clicks, zero impressions, and zero approved conversions because these can make rate or cost metrics undefined.
 
 ## 📊 Headline Results
 
@@ -110,22 +95,6 @@ Values below are calculated directly from the supplied CSV. Rates are percentage
 - Track approved conversions as the primary outcome if they represent the business's qualified result.
 - Confirm metric definitions with the business owner before comparing these results with live ad-platform dashboards.
 
-## ▶️ How to Use
-
-### 1. Load the data into MySQL
-
-Create a database and import `data/KAG_conversion_data.csv` into a table named `marketing_ads`. Map columns to the types described in `DATA_DICTIONARY.md`. The SQL file assumes this table name.
-
-### 2. Run the SQL analysis
-
-Open `sql/marketing_performance_analysis.sql` in MySQL Workbench and execute the queries. The script includes data-quality checks, overall KPIs, campaign comparisons, audience breakdowns, and a window-function ranking.
-
-### 3. Validate headline metrics with Python
-
-```bash
-pip install pandas
-python scripts/validate_metrics.py
-```
 
 ## ⚠️ Metric Definitions
 
@@ -135,13 +104,8 @@ python scripts/validate_metrics.py
 - **Total conversion rate:** total conversions / clicks × 100
 - **Cost per approved conversion:** spend / approved conversions
 
-Rows with a zero denominator should be handled with `NULLIF` in SQL and excluded from undefined rate calculations. These metrics are descriptive; they do not establish causal campaign impact.
 
 ## 👩‍💻 Author
 
 **Marwa Samy**  
 Data Analytics | Marketing Analytics | SQL | Power BI
-
----
-
-*This project is based on the provided `KAG_conversion_data.csv` file. Add dashboard screenshots to an `images/` folder once the Power BI report is built.*
