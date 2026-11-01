@@ -1,4 +1,3 @@
-"""Validate headline KPIs for the marketing campaign dataset."""
 from pathlib import Path
 import pandas as pd
 
